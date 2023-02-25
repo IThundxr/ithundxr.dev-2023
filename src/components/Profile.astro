@@ -1,22 +1,62 @@
 ---
-import Status from '../utils/Status'
-import RoundButton from './RoundButton.astro';
+import Status from "../utils/Status";
+import RoundButton from "./RoundButton.astro";
 ---
 
 <div class="w-screen h-screen flex justify-center items-center">
-    <div class="p-10 backdrop-blur bg-white/50 rounded-2xl drop-shadow-lg space-y-5">
-        <h1 class="text-center text-3xl">Heyo, I'm IThundxr</h1>
-        <p class="text-center text-1xl">I like to play games<br/> and I also like to code</p>
-        <img src="/ithundxr.png" class="rounded-full w-32 h-32 mx-auto border-2 border-white backdrop-blur" alt="ithundxr">
-        <p class="text-center text-1xl">Right now, I am{" "}<Status client:load/></p>
+	<div
+		class="p-10 backdrop-blur bg-white/50 rounded-2xl drop-shadow-lg space-y-5"
+	>
+		<h1 class="text-center text-3xl">Heyo, I'm IThundxr</h1>
+		<p class="text-center text-1xl">
+			I like to play games<br /> and I also like to code
+		</p>
+		<img
+			src="/ithundxr.png"
+			class="rounded-full w-32 h-32 mx-auto border-2 border-white backdrop-blur"
+			alt="ithundxr"
+		/>
+		<p class="text-center text-1xl">
+			Right now, I am{" "}<Status client:load />
+		</p>
 
-        <div class="flex justify-center">
-            <RoundButton link="https://github.com/ithundxr" iconname="bx:bxl-github" width="25" service="Github"/>
-            <RoundButton link="https://discordapp.com/users/694604709591384226" iconname="akar-icons:discord-fill" width="25" service="Discord"/>
-            <RoundButton link="https://twitter.com/ithundxr_" iconname="bx:bxl-twitter" width="25" service="Twitter"/>
-            <RoundButton link="https://www.youtube.com/channel/UCvJCrg9bOGuoskrEYMKviuw" iconname="akar-icons:youtube-fill" width="25" service="Youtube"/>
-            <RoundButton link="https://twitch.tv/ithundxr_" iconname="bi:twitch" width="25" service="Twitch"/>
-            <RoundButton link="mailto:contact@ithundxr.dev" iconname="ic:outline-email" width="25" service="Email"/>
-        </div>
-    </div>
+		<div class="flex justify-center">
+			<RoundButton
+				link="https://github.com/ithundxr"
+				iconname="bx:bxl-github"
+				width="25"
+				service="Github"
+			/>
+			<RoundButton
+				link="https://discordapp.com/users/694604709591384226"
+				iconname="akar-icons:discord-fill"
+				width="25"
+				service="Discord"
+			/>
+			<RoundButton
+				link="https://twitter.com/ithundxr_"
+				iconname="bx:bxl-twitter"
+				width="25"
+				service="Twitter"
+			/>
+			<RoundButton
+				link="https://www.youtube.com/channel/UCvJCrg9bOGuoskrEYMKviuw"
+				iconname="akar-icons:youtube-fill"
+				width="25"
+				service="Youtube"
+			/>
+			<RoundButton
+				link="https://twitch.tv/ithundxr_"
+				iconname="bi:twitch"
+				width="25"
+				service="Twitch"
+			/>
+			<RoundButton
+				link="mailto:contact@ithundxr.dev"
+				iconname="ic:outline-email"
+				width="25"
+				service="Email"
+			/>
+		</div>
+	</div>
 </div>

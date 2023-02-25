@@ -1,0 +1,11 @@
+.git
+.github
+.vscode
+.swc
+node_modules
+
+.eslintignore
+.eslintrc
+.gitignore
+
+README.md

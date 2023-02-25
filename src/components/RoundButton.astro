@@ -1,9 +1,9 @@
 ---
 export interface Props {
-    link: string;
+	link: string;
 	iconname: string;
-    width: string;
-    service: string;
+	width: string;
+	service: string;
 }
 
 const { width } = Astro.props;
@@ -11,14 +11,20 @@ const { link } = Astro.props;
 const { iconname } = Astro.props;
 const { service } = Astro.props;
 
-import { Icon } from 'astro-icon'
+import { Icon } from "astro-icon";
 ---
-<a href={link} aria-label={service} target="_blank" class="flex items-center justify-center mr-1.5 ml-1.5 w-10 h-10 rounded-full bg-navbar-bg-color text-navbar-text-color leading-10 text-center shadow-md transition duration-500">
-    <Icon name={iconname} width={width}/>
+
+<a
+	href={link}
+	aria-label={service}
+	target="_blank"
+	class="flex items-center justify-center mr-1.5 ml-1.5 w-10 h-10 rounded-full bg-navbar-bg-color text-navbar-text-color leading-10 text-center shadow-md transition duration-500"
+>
+	<Icon name={iconname} width={width} />
 </a>
 
 <style lang="css">
-    [astro-icon] {
-        color: black;
-    }
+	[astro-icon] {
+		color: black;
+	}
 </style>

@@ -22,8 +22,9 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<div class="w-screen h-screen flex
-		bg-gradient-to-r from-[#12c2e9] via-[#c471ed] to-[#f64f59] background-animate">
+		<div
+			class="w-screen h-screen flex bg-gradient-to-r from-[#12c2e9] via-[#c471ed] to-[#f64f59] background-animate"
+		>
 			<slot />
 		</div>
 	</body>
@@ -31,20 +32,20 @@ const { title } = Astro.props;
 
 <style>
 	.background-animate {
-	background-size: 400%;
-  
-	-webkit-animation: GradientAnimation 20s ease infinite;
-	-moz-animation: GradientAnimation 20s ease infinite;
-	animation: GradientAnimation 20s ease infinite;
-  }
-  
-  @keyframes GradientAnimation {
-	0%,
-	100% {
-	  background-position: 0% 50%;
+		background-size: 400%;
+
+		-webkit-animation: GradientAnimation 20s ease infinite;
+		-moz-animation: GradientAnimation 20s ease infinite;
+		animation: GradientAnimation 20s ease infinite;
 	}
-	50% {
-	  background-position: 100% 50%;
+
+	@keyframes GradientAnimation {
+		0%,
+		100% {
+			background-position: 0% 50%;
+		}
+		50% {
+			background-position: 100% 50%;
+		}
 	}
-  }
-  </style>
+</style>

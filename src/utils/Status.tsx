@@ -37,7 +37,6 @@ const Status: FC = () => {
 			return "offline";
 		}
 
-
 		const filtered = status.activities
 			?.filter((activity) => activity.type !== 4)
 			?.pop();
@@ -50,13 +49,16 @@ const Status: FC = () => {
 			case "Neovim":
 				return "using Neovim";
 			default:
-				if (filtered.name) return `${getColor().status} and Playing ${filtered.name}`;
+				if (filtered.name)
+					return `${getColor().status} and Playing ${filtered.name}`;
 		}
 	};
 
 	return (
 		// @ts-ignore
-		<span className={getColor().color}>{getStatus()[0].toLowerCase() + getStatus()?.substring(1)}</span>
+		<span className={getColor().color}>
+			{getStatus()[0].toLowerCase() + getStatus()?.substring(1)}
+		</span>
 	);
 };
 
