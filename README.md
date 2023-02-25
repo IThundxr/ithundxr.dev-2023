@@ -1,5 +1,5 @@
-# ✨ ithundxr's website documentation ✨
-This repository contains the assets and the source code required to build [ithundxrs's personal website](https://ithundxr.dev). I am glad you want to contribute!
+# ✨ IThundxr's website documentation ✨
+This repository contains the assets and the source code required to build [IThundxr's personal website](https://ithundxr.dev). I am glad you want to contribute!
 - [Contributing to the website](https://github.com/ithundxr/ithundxr.dev/pull)
 - Contributing to linked repositories and projects (soon)
 
