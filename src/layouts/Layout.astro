@@ -1,0 +1,49 @@
+---
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/x-icon" href="/favicon.ico?" />
+		<meta name="generator" content={Astro.generator} />
+		<meta content="IThundxr" property="og:title" />
+		<meta content="IThundxr's Website" property="og:description" />
+		<meta content="https://ithundxr.dev" property="og:url" />
+		<meta content="/ithundxr.png" property="og:image" />
+		<meta content="#ba132d" data-react-helmet="true" name="theme-color" />
+		<title>{title}</title>
+	</head>
+	<body>
+		<div class="w-screen h-screen flex
+		bg-gradient-to-r from-[#12c2e9] via-[#c471ed] to-[#f64f59] background-animate">
+			<slot />
+		</div>
+	</body>
+</html>
+
+<style>
+	.background-animate {
+	background-size: 400%;
+  
+	-webkit-animation: GradientAnimation 20s ease infinite;
+	-moz-animation: GradientAnimation 20s ease infinite;
+	animation: GradientAnimation 20s ease infinite;
+  }
+  
+  @keyframes GradientAnimation {
+	0%,
+	100% {
+	  background-position: 0% 50%;
+	}
+	50% {
+	  background-position: 100% 50%;
+	}
+  }
+  </style>
