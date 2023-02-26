@@ -43,7 +43,7 @@ const Status: FC = () => {
 		if (!filtered) return getColor().status;
 		switch (filtered.name) {
 			case "Spotify":
-				return "Listening to " + filtered.details;
+				return "Listening to:  " + filtered.details;
 			case "Visual Studio Code":
 				return filtered.details + " in Visual Studio Code";
 			case "Neovim":
