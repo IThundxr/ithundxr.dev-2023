@@ -43,17 +43,16 @@ const Status: FC = () => {
 		if (!filtered) return getColor().status;
 		switch (filtered.name) {
 			case "Spotify":
-				return "Listening to " + filtered.details;
-			case "Visual Studio Code":
-				return filtered.details + " in Visual Studio Code";
-			case "Neovim":
-				return "using Neovim";
+				return getColor().status + "and Listening to " + filtered.details;
+			case "Code":
+				return "coding in Visual Studio Code";
+			case "Call of Duty®: Modern Warfare® II":
+				return getColor().status + " and Playing Modern Warfare II";
 			default:
 				if (filtered.name)
 					return `${getColor().status} and Playing ${filtered.name}`;
 		}
 	};
-
 	return (
 		// @ts-ignore
 		<span className={getColor().color}>
