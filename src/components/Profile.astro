@@ -1,6 +1,7 @@
 ---
 import Status from "../utils/Status";
 import RoundButton from "./RoundButton.astro";
+import RoundEmailButton from "./RoundEmailButton.astro";
 ---
 
 <div class="w-screen h-screen flex justify-center items-center">
@@ -25,37 +26,45 @@ import RoundButton from "./RoundButton.astro";
 				iconname="bx:bxl-github"
 				width="30"
 				service="Github"
+				color="#1B1F23"
 			/>
 			<RoundButton
 				link="https://discordapp.com/users/694604709591384226"
 				iconname="akar-icons:discord-fill"
 				width="30"
 				service="Discord"
+				color="#5865F2"
 			/>
 			<RoundButton
 				link="https://twitter.com/ithundxr_"
 				iconname="bx:bxl-twitter"
 				width="30"
 				service="Twitter"
+				color="#1D9BF0"
 			/>
 			<RoundButton
 				link="https://www.youtube.com/channel/UCvJCrg9bOGuoskrEYMKviuw"
 				iconname="akar-icons:youtube-fill"
 				width="30"
 				service="Youtube"
+				color="#FF0000"
 			/>
 			<RoundButton
 				link="https://twitch.tv/ithundxr_"
 				iconname="bi:twitch"
 				width="30"
 				service="Twitch"
+				color="#A970FF"
 			/>
-			<RoundButton
-				link="mailto:contact@ithundxr.dev"
-				iconname="ic:outline-email"
-				width="30"
-				service="Email"
-			/>
+			<div class="cursor-pointer">
+				<RoundEmailButton
+					iconname="ic:outline-email"
+					width="30"
+					service="Email"
+					color="#000000"
+					onClickScript="window.location.href = 'mailto:' + ['c', 'o', 'n', 't', 'a', 'c', 't', '@', 'i', 't', 'h', 'u', 'n', 'd', 'x', 'r', '.', 'd', 'e', 'v'].join('')"
+				/>
+			</div>
 		</div>
 	</div>
 </div>
