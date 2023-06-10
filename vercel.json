@@ -1,16 +1,24 @@
 {
 	"headers": [{
-		"source": "/.well-known/matrix/server",
-		"headers": [{
-			"key": "content-type",
-			"value": "application/json"
-		}]
-	},
-    {
-		"source": "/.well-known/matrix/client",
-		"headers": [{
-			"key": "content-type",
-			"value": "application/json"
-		}]
-	}]
+			"source": "/.well-known/matrix/server",
+			"headers": [{
+				"key": "content-type",
+				"value": "application/json"
+			}]
+		},
+		{
+			"source": "/.well-known/matrix/client",
+			"headers": [{
+				"key": "content-type",
+				"value": "application/json"
+			}]
+		},
+		{
+			"source": "/pubkey.asc",
+			"headers": [{
+				"key": "content-type",
+				"value": "application/pgp-keys"
+			}]
+		}
+	]
 }
