@@ -56,15 +56,13 @@ import RoundEmailButton from "./RoundEmailButton.astro";
 				service="Twitch"
 				color="#A970FF"
 			/>
-			<div class="cursor-pointer">
-				<RoundEmailButton
-					iconname="ic:outline-email"
-					width="30"
-					service="Email"
-					color="#000000"
-					onClickScript="window.location.href = 'mailto:' + ['c', 'o', 'n', 't', 'a', 'c', 't', '@', 'i', 't', 'h', 'u', 'n', 'd', 'x', 'r', '.', 'd', 'e', 'v'].join('')"
-				/>
-			</div>
+			<RoundButton
+				link="mailto:contact@ithundxr.dev"
+				iconname="ic:outline-email"
+				width="30"
+				service="Email"
+				color="#ffffff"
+			/>
 		</div>
 	</div>
 </div>
