@@ -1,7 +1,6 @@
 ---
-import Status from "../utils/Status";
 import RoundButton from "./RoundButton.astro";
-import RoundEmailButton from "./RoundEmailButton.astro";
+import { Image } from 'astro:assets';
 ---
 
 <div class="w-screen h-screen flex justify-center items-center">
@@ -12,54 +11,48 @@ import RoundEmailButton from "./RoundEmailButton.astro";
 		<p class="text-center text-1xl">
 			I like to play games<br /> and I also like to code
 		</p>
-			<img
+			<Image
 				src="/ithundxr.png"
 				class="rounded-full w-32 h-32 mx-auto border-2 border-white backdrop-blur"
 				alt="ithundxr"
+				height="128"
+				width="128"
+				loading="eager"
 			/>
-		<p class="text-center text-1xl">
-			Right now, I am{" "}<Status client:load />
-		</p>
 		<div class="flex justify-center">
 			<RoundButton
 				link="https://github.com/ithundxr"
 				iconname="bx:bxl-github"
-				width="30"
 				service="Github"
 				color="#1B1F23"
 			/>
 			<RoundButton
 				link="https://discordapp.com/users/694604709591384226"
 				iconname="akar-icons:discord-fill"
-				width="30"
 				service="Discord"
 				color="#5865F2"
 			/>
 			<RoundButton
 				link="https://twitter.com/ithundxr_"
 				iconname="bx:bxl-twitter"
-				width="30"
 				service="Twitter"
 				color="#1D9BF0"
 			/>
 			<RoundButton
 				link="https://www.youtube.com/@IThundxr"
 				iconname="akar-icons:youtube-fill"
-				width="30"
 				service="Youtube"
 				color="#FF0000"
 			/>
 			<RoundButton
 				link="https://twitch.tv/ithundxr_"
 				iconname="bi:twitch"
-				width="30"
 				service="Twitch"
 				color="#A970FF"
 			/>
 			<RoundButton
 				link="mailto:me@ithundxr.dev"
 				iconname="ic:outline-email"
-				width="30"
 				service="Email"
 				color="#ffffff"
 			/>

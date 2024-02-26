@@ -2,18 +2,16 @@
 export interface Props {
 	link: string;
 	iconname: string;
-	width: string;
 	service: string;
 	color: string;
 }
 
-const { width } = Astro.props;
 const { link } = Astro.props;
 const { iconname } = Astro.props;
 const { service } = Astro.props;
 const { color } = Astro.props;
 
-import { Icon } from "astro-icon";
+import { Icon } from 'astro-icon/components'
 ---
 
 <a
@@ -23,5 +21,5 @@ import { Icon } from "astro-icon";
 	class="flex items-center justify-center mr-1.5 ml-1.5 w-10 h-10 rounded-full leading-10 text-center shadow-md drop-shadow-lg backdrop-blur transition duration-500 hover:bg-gray-200 focus:bg-gray-200 cursor-pointer"
 >
 	<!-- To switch to colored icons remove the ': "black"' part and colors will start working -->
-	<Icon name={iconname} width={width} style={{ color: "black" }} />
+	<Icon name={iconname} style={{ color: "black" }} />
 </a>
